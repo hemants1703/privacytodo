@@ -1,54 +1,62 @@
-# React + TypeScript + Vite
+# PrivacyTodo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A privacy-focused todo application built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+![PrivacyTodo](https://github.com/hemants1703/privacytodo/blob/main/public/privacytodo.png?raw=true)
+![PrivacyTodo](https://github.com/hemants1703/privacytodo/blob/main/public/app_screenshot.png?raw=true)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Modern UI with Tailwind CSS
+- Privacy-first approach to task management
+- Responsive design for all devices
+- Local storage database (no external servers)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- React 19
+- TypeScript 5
+- Vite 6
+- Tailwind CSS v4
+- [Radix UI Icons](https://www.radix-ui.com/icons) and [Lucide](https://lucide.dev/) React for icons
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (latest LTS version recommended)
+- pnpm package manager
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```sh
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To start the development server:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+pnpm dev
+```
+
+This will start the development server at `http://localhost:3000`.
+
+### Build
+
+To build the project:
+
+```sh
+pnpm build
+```
+
+This will create an optimized build of the project in the `dist` directory.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
 ```
