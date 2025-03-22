@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+#section1 {
+    background-color: #000000;
+opacity: 1;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 40px ), repeating-linear-gradient( #1c398e55, #1c398e );
+}
+
+#section2 {
+    background-color: #000000;
+    opacity: 1;
+    background-image: radial-gradient(#1c398e 1.6500000000000001px, #000000 1.6500000000000001px);
+    background-size: 35px 35px;
+}
